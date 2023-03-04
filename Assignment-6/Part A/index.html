@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Calculator Web Application</title>
+
+    <script
+    src="https://code.jquery.com/jquery-3.6.3.js"
+    integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+    crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="display-6 text-center p-5">Simple Calculator - Web Application</div>
+      <table class="table table-borderless table-hover mx-auto my-auto">
+        <tr>
+          <td>
+            <div class="input-group">
+              <label>Username<label class="text-danger-emphasis">*</label></label>
+            </div>
+          </td>
+          <td>
+            <input type="text" id="username" placeholder="user name" />
+            <br/>
+            <label id="nameerror" class="text-danger-emphasis"></label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>Email<label class="text-danger-emphasis">*</label></label>
+          </td>
+          <td>
+            <input type="email" id="email" placeholder="email" />
+            <br/>
+            <label id="emailerror" class="text-danger-emphasis"></label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>Password<label class="text-danger-emphasis">*</label></label>
+          </td>
+          <td>
+            <input type="password" id="password" placeholder="password" />
+            <br/>
+            <label id="passworderror" class="text-danger-emphasis"></label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="h6">Password Should Contain Following: </div>
+          </td>
+          <td>
+            <ul>
+              <li id="capital" class="text-danger">
+                At least <strong>one capital letter</strong>
+              </li>
+              <li id="small" class="text-danger">
+                At least <strong>one small letter</strong>
+              </li>
+              <li id="special" class="text-danger">
+                At least <strong>one special letter</strong>
+              </li>
+              <li id="number" class="text-danger">
+                At least <strong>one number</strong>
+              </li>
+              <li id="length" class="text-danger">
+                Be at least <strong>8 characters</strong>
+              </li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <div class="button-container">
+              <input class="btn btn-primary" type="submit" id="validate" value="Log Into Application" />
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
